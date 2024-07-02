@@ -324,143 +324,80 @@ footer{
 
 
 
-
-  
-/*Making the website responsive to smaller screens like mobile phones*/
-@media screen and (max-width: 768px) {
-
-    /*slideshow*/
-
-.slideshow {
-    align-items: center;
-    height: 600px;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-right: 50px;
-    
+/* Add this media query to make the layout responsive to 768px */
+@media (max-width: 768px) {
+  /* Adjust the layout for smaller screens */
+  .first {
+    padding: 5px;
   }
-  
-  .slide {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    animation: fade 12s infinite;
-    opacity: 0;
+  .second {
+    padding: 10px;
+    padding-bottom: 50px;
   }
-  
-  .slide:nth-child(1) {
-    animation-delay: 0s;
+  #secondnavbar {
+    float: none;
+    padding: 5px;
   }
-  
-  .slide:nth-child(2) {
-    animation-delay: 4s;
+  #firstnavbar {
+    float: none;
   }
-  
-  .slide:nth-child(3) {
-    animation-delay: 8s;
+  #secondnavbar a, #firstnavbar a {
+    padding: 5px;
+    font-size: 16px;
   }
-  
-  @keyframes fade{
-    0% {opacity: 0;}
-    8% {opacity: 1;}
-    33% {opacity: 1;}
-    41% {opacity: 0;}
-    100% {opacity: 0;}
+  .dropdown-content {
+    min-width: 120px;
   }
-
-
-
-*Displaying items*/
-
-.product-container {
-    display: grid;
+  form {
+    width: 80%;
+  }
+  input[type=search] {
+    padding: 0 5px;
+  }
+  button[type=submit] {
+    width: 40px;
+    height: 40px;
+  }
+  .third {
+    padding: 20px;
+  }
+  .third a {
+    font-size: 16px;
+  }
+  .third button {
+    width: 100px;
+    height: 40px;
+  }
+  .slideshow {
+    height: 400px;
+  }
+  .product-container {
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+    grid-gap: 10px;
     margin: 20px;
-
   }
-  
   .product-card {
-    background-color: orange;
+    background-color: rgb(255, 166, 0);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.1s ease-in-out;
   }
-  
-  .product-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  .show {
+    padding: 20px;
   }
-  
-  .product-card img {
-    width: 100%;
-    height: 100px;
-    object-fit: cover;
+  .show a {
+    font-size: 16px;
   }
-  
-  .product-card h3 {
-    margin: 10px 0;
-    text-align: center;
+  .show button {
+    width: 100px;
+    height: 40px;
   }
-  
-  .product-card p {
-    font-weight: bold;
-    color: #f00;
-    text-align: center;
-    padding-bottom: 10px;
+  footer {
+    margin: 20px;
+    font-size: 16px;
   }
-
-
-/* Item navigation bar*/
-
-.third{
-    padding: 100px;
-    
 }
-.third a{
-    text-decoration: none;
-    color: white;
-    font-size: 20px
-   
-}
-.third button{
-    width: 150px;
-    height: 50px;
-    background-color: orange;
-    border-radius: 10px;
-    border-color: transparent;
-    margin-top: 20px;
-    
-}
-.third button:hover{
-    background-color: #45a049;
-}
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
